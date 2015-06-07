@@ -24,7 +24,6 @@ namespace DatabaseWrapper
 
         public void LoadByPrimaryKey(int id)
         {
-            Console.WriteLine("AAAAHHHHHHHHHH!!!!");
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("Select * From HouseEntrance Where HouseEntranceId = @id", conn))
