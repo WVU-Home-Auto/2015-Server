@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace DatabaseWrapper
 {
     public class HouseEntrance
@@ -22,6 +24,7 @@ namespace DatabaseWrapper
 
         public void LoadByPrimaryKey(int id)
         {
+            Console.WriteLine("AAAAHHHHHHHHHH!!!!");
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("Select * From HouseEntrance Where HouseEntranceId = @id", conn))
@@ -30,6 +33,7 @@ namespace DatabaseWrapper
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
+                        
                         DataTable dt = new DataTable();
                         conn.Open();
                         da.Fill(dt);
