@@ -40,6 +40,47 @@ namespace Engine
 
             return light.LightSet;
         }
+
+
+        // Nathan Started Here...
+
+        // wattage
+
+        public double ViewWatts(int houseLightId)
+        {
+
+            HouseLight light = new HouseLight();
+            light.LoadByPrimaryKey(houseLightId);
+
+            return light.Wattage;
+        }
+
+        // change wattage
+
+        public void ChangeWatts(int houseLightId, double change)
+        {
+
+            HouseLight light = new HouseLight();
+            light.LoadByPrimaryKey(houseLightId);
+
+            double originalWatts = light.Wattage;
+
+            if (light.Wattage < 0)
+                throw new Exception("The wattage amount is invalid!");
+
+            // Should the wattage have a maximum amount? ************
+      
+            light.Wattage = change;
+            light.Save();
+
+            HouseLightLog log = new HouseLightLog();
+            log.TimeStamp = DateTime.Now;
+
+            log.Event = "Wattage was changed to " + change + " from " + originalWatts;
+        }
        
+
+  
+            // Should we implement something to maybe change the Zone ID of the light? 
     }
 }

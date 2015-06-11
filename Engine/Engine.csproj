@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication.cs" />
+    <Compile Include="MotionDetector.cs" />
+    <Compile Include="Temperature.cs" />
     <Compile Include="Lighting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
