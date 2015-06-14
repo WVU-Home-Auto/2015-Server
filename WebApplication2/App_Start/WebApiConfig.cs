@@ -17,7 +17,13 @@ namespace WebApplication2
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional, action = "GetState" }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "LightApi",
+                routeTemplate: "api/{controller}/{action}/{id}/{state}",
+                defaults: new { state = RouteParameter.Optional}
             );
         }
     }
