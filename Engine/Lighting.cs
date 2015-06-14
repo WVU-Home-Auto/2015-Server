@@ -14,7 +14,7 @@ namespace Engine
 
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
-            if (light.HouseLightId == 0)
+            if (light.HouseLightId == 0 || light.HouseLightId < 0)
                 throw new Exception("The light you are attempting to switch is invalid!");
 
             light.LightSet = value;

@@ -44,7 +44,7 @@ namespace Engine
             MotionSensor mot = new MotionSensor();
             mot.LoadByPrimaryKey(MotionSensorId);
 
-            if (mot.MotionSensorId == 0)
+            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0)
                 throw new Exception("The Motion sensor you are altering is invalid!");
 
             mot.Status = value;

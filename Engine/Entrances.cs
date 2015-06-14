@@ -32,7 +32,7 @@ namespace Engine
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
 
-            if (door.HouseEntranceId == 0)
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0)
                 throw new Exception("The entrance you are altering is invalid!");
 
             door.Status = value;
@@ -49,6 +49,24 @@ namespace Engine
             }
             else
                 log.Event = "Entrance was closed";
+        }
+
+        public double GetX(int HouseEntranceId)
+        {
+            HouseEntrance door = new HouseEntrance();
+            door.LoadByPrimaryKey(HouseEntranceId);
+
+            return door.PictureXCoordinate;
+
+        }
+
+        public double GetY(int HouseEntranceId)
+        {
+            HouseEntrance door = new HouseEntrance();
+            door.LoadByPrimaryKey(HouseEntranceId);
+
+            return door.PictureYCoordinate;
+
         }
     }
 }
