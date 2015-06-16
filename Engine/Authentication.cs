@@ -13,7 +13,6 @@ namespace Engine
         {
             User user = new User();
             return user.Authenticate(username, password);
-               
         }
     }
 }
