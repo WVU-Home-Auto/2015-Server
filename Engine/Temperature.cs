@@ -17,7 +17,11 @@ namespace Engine
             TemperatureSensor temp = new TemperatureSensor();
             temp.LoadByPrimaryKey(TemperatureSensorId);
 
+            if (temp.TemperatureSensorId == 0 || temp.TemperatureSensorId < 0 || temp.TemperatureSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The sensor you are attempting to switch is invalid!");
+
             return temp.CurrentTemperature;
+
         }
 
         // should there be a method to alter the temperature? 
@@ -28,9 +32,12 @@ namespace Engine
             TemperatureSensor temp = new TemperatureSensor();
             temp.LoadByPrimaryKey(TemperatureSensorId);
 
+            if (temp.TemperatureSensorId == 0 || temp.TemperatureSensorId < 0 || temp.TemperatureSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The sensor you are attempting to switch is invalid!");
+
             double originalTemp = temp.CurrentTemperature;
 
-            if (temp.CurrentTemperature < 0)
+            if (temp.CurrentTemperature < 0 || temp.CurrentTemperature > 100)
                 throw new Exception("The temperature is invalid!");
 
             // Should the temperature have a maximum and minimum amount? ************

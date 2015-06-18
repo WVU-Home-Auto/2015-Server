@@ -17,6 +17,9 @@ namespace Engine
             MotionSensor mot = new MotionSensor();
             mot.LoadByPrimaryKey(MotionSensorId);
 
+            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0 || mot.MotionSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The motion detector you are attempting to switch is invalid!");
+
             return mot.PictureXCoordinate;
 
         }
@@ -25,6 +28,9 @@ namespace Engine
         {
             MotionSensor mot = new MotionSensor();
             mot.LoadByPrimaryKey(MotionSensorId);
+
+            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0 || mot.MotionSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The motion detector you are attempting to switch is invalid!");
 
             return mot.PictureYCoordinate;
 
@@ -36,6 +42,9 @@ namespace Engine
             MotionSensor mot = new MotionSensor();
             mot.LoadByPrimaryKey(MotionSensorId);
 
+            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0 || mot.MotionSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The motion detector you are attempting to switch is invalid!");
+
             return mot.Status;
         }
 
@@ -44,8 +53,8 @@ namespace Engine
             MotionSensor mot = new MotionSensor();
             mot.LoadByPrimaryKey(MotionSensorId);
 
-            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0)
-                throw new Exception("The Motion sensor you are altering is invalid!");
+            if (mot.MotionSensorId == 0 || mot.MotionSensorId < 0 || mot.MotionSensorId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The motion detector you are attempting to switch is invalid!");
 
             mot.Status = value;
 

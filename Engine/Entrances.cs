@@ -15,6 +15,9 @@ namespace Engine
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
 
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0 || door.HouseEntranceId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The entrance you are altering is invalid!");
+
             return door.EntranceType;
         }
 
@@ -24,6 +27,9 @@ namespace Engine
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
 
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0 || door.HouseEntranceId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The entrance you are altering is invalid!");
+
             return door.Status;
         }
 
@@ -32,7 +38,7 @@ namespace Engine
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
 
-            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0)
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0 || door.HouseEntranceId > 40)     // What should the max ID number be to throw exception?
                 throw new Exception("The entrance you are altering is invalid!");
 
             door.Status = value;
@@ -56,6 +62,9 @@ namespace Engine
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
 
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0 || door.HouseEntranceId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The entrance you are altering is invalid!");
+
             return door.PictureXCoordinate;
 
         }
@@ -64,6 +73,9 @@ namespace Engine
         {
             HouseEntrance door = new HouseEntrance();
             door.LoadByPrimaryKey(HouseEntranceId);
+
+            if (door.HouseEntranceId == 0 || door.HouseEntranceId < 0 || door.HouseEntranceId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The entrance you are altering is invalid!");
 
             return door.PictureYCoordinate;
 
