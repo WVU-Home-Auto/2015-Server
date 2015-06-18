@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Engine;
 
-//Author: Syihan Muhammad
-
 namespace EngineTester
 {
     public partial class MotionDetectorTester : Form
