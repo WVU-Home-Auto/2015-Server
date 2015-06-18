@@ -10,6 +10,7 @@ namespace WebApplication2.Controllers
     public class LightController : ApiController
     {
         static bool[] States = new bool[10];
+        static double[] Watts = new double[10];
 
         [HttpGet]
         [ActionName("GetState")]
@@ -31,6 +32,21 @@ namespace WebApplication2.Controllers
         {
             States[id] = !States[id];
             return "Set light #" + id + " to " + States[id];
+        }
+
+        [HttpGet]
+        [ActionName("GetWattage")]
+        public double GetWattage(int id)
+        {
+            return (Watts[id]);
+        }
+
+        [HttpGet]
+        [ActionName("SetWattage")]
+        public String SetWattage(int id, double watt)
+        {
+            Watts[id] = watt;
+            return "Set light #" + id + "'s wattage to " + watt + " W.";
         }
     }
 }
