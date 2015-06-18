@@ -9,6 +9,9 @@ namespace Engine
 {
     public class Lighting
     {
+        //Change for your personal data base
+        internal string _connectionString = "Data Source=DPETRELLE32;Initial Catalog=Solar;Integrated Security=True";
+
         public void SwitchLight(int houseLightId, bool value)
         {
 
