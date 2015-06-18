@@ -17,7 +17,7 @@ namespace Engine
 
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
-            if (light.HouseLightId == 0 || light.HouseLightId < 0)
+            if (light.HouseLightId == 0 || light.HouseLightId < 0 || light.HouseLightId > 40)     // What should the max ID number be to throw exception?
                 throw new Exception("The light you are attempting to switch is invalid!");
 
             light.LightSet = value;
@@ -41,11 +41,12 @@ namespace Engine
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
 
+            if (light.HouseLightId == 0 || light.HouseLightId < 0 || light.HouseLightId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The light you are attempting to switch is invalid!");
+
             return light.LightSet;
         }
 
-
-        // Nathan Started Here...
 
         // wattage
 
@@ -54,6 +55,9 @@ namespace Engine
 
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
+
+            if (light.HouseLightId == 0 || light.HouseLightId < 0 || light.HouseLightId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The light you are attempting to switch is invalid!");
 
             return light.Wattage;
         }
@@ -65,6 +69,9 @@ namespace Engine
 
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
+
+            if (light.HouseLightId == 0 || light.HouseLightId < 0 || light.HouseLightId > 40)     // What should the max ID number be to throw exception?
+                throw new Exception("The light you are attempting to switch is invalid!");
 
             double originalWatts = light.Wattage;
 
