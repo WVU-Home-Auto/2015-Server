@@ -35,7 +35,7 @@ namespace EngineTester
 
             if (tester.IsLightOn(LightID))
             {
-                StatusLabel.Text = "Stutus: On";
+                StatusLabel.Text = "Status: On";
             }
             else
             {

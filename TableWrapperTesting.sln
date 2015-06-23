@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseWrapper", "DatabaseWrapper\DatabaseWrapper.csproj", "{08B51E81-C537-4EC8-AA68-CE8B09ADE4B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{6ED8D50D-7C9A-4C89-9EFA-85ECC7E43691}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{F7369FA8-E7D8-4314-AFA1-4DDD3770B3D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineTester", "EngineTester\EngineTester.csproj", "{40C42074-D6DC-48E1-BCEA-A02E8D06DF5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutableTesterProject", "ExecutableTesterProject\ExecutableTesterProject.csproj", "{477FF714-A8CD-4CB3-BE47-6A7D7D5F2221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{40C42074-D6DC-48E1-BCEA-A02E8D06DF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C42074-D6DC-48E1-BCEA-A02E8D06DF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C42074-D6DC-48E1-BCEA-A02E8D06DF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477FF714-A8CD-4CB3-BE47-6A7D7D5F2221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477FF714-A8CD-4CB3-BE47-6A7D7D5F2221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477FF714-A8CD-4CB3-BE47-6A7D7D5F2221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477FF714-A8CD-4CB3-BE47-6A7D7D5F2221}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
