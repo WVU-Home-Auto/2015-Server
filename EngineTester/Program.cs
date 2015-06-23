@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Engine;
 
 namespace EngineTester
 {
@@ -17,6 +18,11 @@ namespace EngineTester
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Application.Run(new AuthenticationTester());
+            Application.Run(new EntrancesTester());
+            Application.Run(new LightingTester());
+            Application.Run(new MotionDetectorTester());
+            Application.Run(new TemperatureTester());
         }
     }
 }
