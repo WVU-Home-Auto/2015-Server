@@ -14,7 +14,7 @@ namespace DatabaseWrapper
         public string Password { get; set; }
         public string Access { get; set; }
 
-        internal string _connectionString = "Data Source=DEVELOPMENT;Initial Catalog=test4_db;Integrated Security=True";
+        internal string _connectionString = Globals.connectionString;
 
         public Boolean Authenticate(string username, string password)
         {

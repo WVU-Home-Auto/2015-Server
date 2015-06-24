@@ -15,7 +15,7 @@ namespace DatabaseWrapper
         public bool LightSet { get; set; }
         public double Wattage { get; set; }
 
-        internal string _connectionString = "Data Source=DEVELOPMENT;Initial Catalog=test4_db;Integrated Security=True";
+        internal string _connectionString = Globals.connectionString;
 
         public void LoadByPrimaryKey(int id)
         {
