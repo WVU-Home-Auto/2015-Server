@@ -12,6 +12,9 @@ namespace Engine
 {
     public class Temperature 
     {
+
+        string conn = Globals.connectionString;
+
         public double CurrentTemp(int TemperatureSensorId)
         {
             TemperatureSensor temp = new TemperatureSensor();

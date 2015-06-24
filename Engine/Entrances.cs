@@ -10,6 +10,8 @@ namespace Engine
     public class Entrances
     {
 
+        string conn = Globals.connectionString;
+
         public string getType(int HouseEntranceId)
         {
             HouseEntrance door = new HouseEntrance();

@@ -9,8 +9,7 @@ namespace Engine
 {
     public class Lighting
     {
-        //Change for your personal data base
-        internal string _connectionString = "Data Source=DPETRELLE32;Initial Catalog=Solar;Integrated Security=True";
+        string conn = Globals.connectionString;
 
         public void SwitchLight(int houseLightId, bool value)
         {
@@ -18,7 +17,9 @@ namespace Engine
             HouseLight light = new HouseLight();
             light.LoadByPrimaryKey(houseLightId);
             if (light.HouseLightId == 0 || light.HouseLightId < 0 || light.HouseLightId > 40)     // What should the max ID number be to throw exception?
+            {
                 throw new Exception("The light you are attempting to switch is invalid!");
+            }
 
             light.LightSet = value;
             light.Save();
@@ -26,9 +27,13 @@ namespace Engine
             HouseLightLog log = new HouseLightLog();
             log.TimeStamp = DateTime.Now;
             if (value)
+            {
                 log.Event = "Light was switched On";
+            }
             else
+            {
                 log.Event = "Light was switched off";
+            }
             log.Save();
 
             // Physically switch light on

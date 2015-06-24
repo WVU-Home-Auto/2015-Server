@@ -9,6 +9,9 @@ namespace Engine
 {
     public class Authentication
     {
+
+        string conn = Globals.connectionString;
+
         public static Boolean ValidUser(string username, string password)
         {
             User user = new User();

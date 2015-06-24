@@ -12,6 +12,9 @@ namespace Engine
 {
     public class MotionDetector
     {
+
+        string conn = Globals.connectionString;
+
         public double GetX(int MotionSensorId)
         {
             MotionSensor mot = new MotionSensor();
