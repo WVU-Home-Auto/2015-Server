@@ -15,13 +15,14 @@ namespace EngineTester
         [STAThread]
         static void Main()
         {
+            Console.WriteLine("PROGRAM START");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AuthenticationTester());
-            Application.Run(new EntrancesTester());
+           // Application.Run(new AuthenticationTester());
+            //Application.Run(new EntrancesTester());
             Application.Run(new LightingTester());
-            Application.Run(new MotionDetectorTester());
-            Application.Run(new TemperatureTester());
+            //Application.Run(new MotionDetectorTester());
+            //Application.Run(new TemperatureTester());
         }
     }
 }
