@@ -47,10 +47,9 @@
             // 
             this.LightIDLabel.AutoSize = true;
             this.LightIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LightIDLabel.Location = new System.Drawing.Point(16, 23);
-            this.LightIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LightIDLabel.Location = new System.Drawing.Point(12, 19);
             this.LightIDLabel.Name = "LightIDLabel";
-            this.LightIDLabel.Size = new System.Drawing.Size(115, 29);
+            this.LightIDLabel.Size = new System.Drawing.Size(93, 25);
             this.LightIDLabel.TabIndex = 0;
             this.LightIDLabel.Text = "Light ID:";
             // 
@@ -58,30 +57,27 @@
             // 
             this.LightInfoLabel.AutoSize = true;
             this.LightInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LightInfoLabel.Location = new System.Drawing.Point(16, 112);
-            this.LightInfoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LightInfoLabel.Location = new System.Drawing.Point(12, 91);
             this.LightInfoLabel.Name = "LightInfoLabel";
-            this.LightInfoLabel.Size = new System.Drawing.Size(134, 29);
+            this.LightInfoLabel.Size = new System.Drawing.Size(108, 25);
             this.LightInfoLabel.TabIndex = 1;
             this.LightInfoLabel.Text = "Light Info:";
             // 
             // LightIDTextbox
             // 
             this.LightIDTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LightIDTextbox.Location = new System.Drawing.Point(23, 58);
-            this.LightIDTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LightIDTextbox.Location = new System.Drawing.Point(17, 47);
             this.LightIDTextbox.Name = "LightIDTextbox";
-            this.LightIDTextbox.Size = new System.Drawing.Size(201, 30);
+            this.LightIDTextbox.Size = new System.Drawing.Size(152, 26);
             this.LightIDTextbox.TabIndex = 3;
             // 
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(52, 154);
-            this.StatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.StatusLabel.Location = new System.Drawing.Point(39, 125);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(113, 25);
+            this.StatusLabel.Size = new System.Drawing.Size(90, 20);
             this.StatusLabel.TabIndex = 5;
             this.StatusLabel.Text = "Status: N/A";
             // 
@@ -89,10 +85,9 @@
             // 
             this.WattageLabel.AutoSize = true;
             this.WattageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WattageLabel.Location = new System.Drawing.Point(52, 185);
-            this.WattageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WattageLabel.Location = new System.Drawing.Point(39, 150);
             this.WattageLabel.Name = "WattageLabel";
-            this.WattageLabel.Size = new System.Drawing.Size(131, 25);
+            this.WattageLabel.Size = new System.Drawing.Size(104, 20);
             this.WattageLabel.TabIndex = 6;
             this.WattageLabel.Text = "Wattage: N/A";
             // 
@@ -100,10 +95,9 @@
             // 
             this.SetWattageLabel.AutoSize = true;
             this.SetWattageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetWattageLabel.Location = new System.Drawing.Point(52, 304);
-            this.SetWattageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SetWattageLabel.Location = new System.Drawing.Point(39, 247);
             this.SetWattageLabel.Name = "SetWattageLabel";
-            this.SetWattageLabel.Size = new System.Drawing.Size(127, 25);
+            this.SetWattageLabel.Size = new System.Drawing.Size(103, 20);
             this.SetWattageLabel.TabIndex = 10;
             this.SetWattageLabel.Text = "Set Wattage:";
             // 
@@ -111,40 +105,36 @@
             // 
             this.SetStatusLabel.AutoSize = true;
             this.SetStatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetStatusLabel.Location = new System.Drawing.Point(52, 273);
-            this.SetStatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SetStatusLabel.Location = new System.Drawing.Point(39, 222);
             this.SetStatusLabel.Name = "SetStatusLabel";
-            this.SetStatusLabel.Size = new System.Drawing.Size(109, 25);
+            this.SetStatusLabel.Size = new System.Drawing.Size(89, 20);
             this.SetStatusLabel.TabIndex = 9;
             this.SetStatusLabel.Text = "Set Status:";
             // 
             // SetWattageTextbox
             // 
             this.SetWattageTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetWattageTextbox.Location = new System.Drawing.Point(197, 304);
-            this.SetWattageTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SetWattageTextbox.Location = new System.Drawing.Point(148, 247);
             this.SetWattageTextbox.Name = "SetWattageTextbox";
-            this.SetWattageTextbox.Size = new System.Drawing.Size(201, 30);
+            this.SetWattageTextbox.Size = new System.Drawing.Size(152, 26);
             this.SetWattageTextbox.TabIndex = 8;
             // 
             // ApplyChangesLabel
             // 
             this.ApplyChangesLabel.AutoSize = true;
             this.ApplyChangesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ApplyChangesLabel.Location = new System.Drawing.Point(16, 231);
-            this.ApplyChangesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ApplyChangesLabel.Location = new System.Drawing.Point(12, 188);
             this.ApplyChangesLabel.Name = "ApplyChangesLabel";
-            this.ApplyChangesLabel.Size = new System.Drawing.Size(206, 29);
+            this.ApplyChangesLabel.Size = new System.Drawing.Size(167, 25);
             this.ApplyChangesLabel.TabIndex = 7;
             this.ApplyChangesLabel.Text = "Apply Changes:";
             // 
             // SubmitIDButton
             // 
             this.SubmitIDButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitIDButton.Location = new System.Drawing.Point(233, 58);
-            this.SubmitIDButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubmitIDButton.Location = new System.Drawing.Point(175, 47);
             this.SubmitIDButton.Name = "SubmitIDButton";
-            this.SubmitIDButton.Size = new System.Drawing.Size(137, 32);
+            this.SubmitIDButton.Size = new System.Drawing.Size(103, 26);
             this.SubmitIDButton.TabIndex = 11;
             this.SubmitIDButton.Text = "Submit";
             this.SubmitIDButton.UseVisualStyleBackColor = true;
@@ -153,22 +143,21 @@
             // ApplyButton
             // 
             this.ApplyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ApplyButton.Location = new System.Drawing.Point(197, 343);
-            this.ApplyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ApplyButton.Location = new System.Drawing.Point(148, 279);
             this.ApplyButton.Name = "ApplyButton";
-            this.ApplyButton.Size = new System.Drawing.Size(137, 32);
+            this.ApplyButton.Size = new System.Drawing.Size(103, 26);
             this.ApplyButton.TabIndex = 12;
             this.ApplyButton.Text = "Apply";
             this.ApplyButton.UseVisualStyleBackColor = true;
+            this.ApplyButton.Click += new System.EventHandler(this.ApplyButton_Click);
             // 
             // LightOnButton
             // 
             this.LightOnButton.AutoSize = true;
             this.LightOnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LightOnButton.Location = new System.Drawing.Point(197, 271);
-            this.LightOnButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LightOnButton.Location = new System.Drawing.Point(148, 220);
             this.LightOnButton.Name = "LightOnButton";
-            this.LightOnButton.Size = new System.Drawing.Size(60, 29);
+            this.LightOnButton.Size = new System.Drawing.Size(48, 24);
             this.LightOnButton.TabIndex = 13;
             this.LightOnButton.TabStop = true;
             this.LightOnButton.Text = "On";
@@ -178,10 +167,9 @@
             // 
             this.LightOffButton.AutoSize = true;
             this.LightOffButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LightOffButton.Location = new System.Drawing.Point(284, 271);
-            this.LightOffButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LightOffButton.Location = new System.Drawing.Point(213, 220);
             this.LightOffButton.Name = "LightOffButton";
-            this.LightOffButton.Size = new System.Drawing.Size(59, 29);
+            this.LightOffButton.Size = new System.Drawing.Size(49, 24);
             this.LightOffButton.TabIndex = 14;
             this.LightOffButton.TabStop = true;
             this.LightOffButton.Text = "Off";
@@ -189,9 +177,9 @@
             // 
             // LightingTester
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 411);
+            this.ClientSize = new System.Drawing.Size(327, 334);
             this.Controls.Add(this.LightOffButton);
             this.Controls.Add(this.LightOnButton);
             this.Controls.Add(this.ApplyButton);
@@ -205,7 +193,6 @@
             this.Controls.Add(this.LightIDTextbox);
             this.Controls.Add(this.LightInfoLabel);
             this.Controls.Add(this.LightIDLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LightingTester";
             this.Text = "LightingTester";
             this.ResumeLayout(false);

@@ -50,9 +50,10 @@ namespace EngineTester
          */
         private void ApplyButton_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("AAAAAAAAAAAAAHHHHHHHHHHHHH");
+
             tester.SwitchLight(LightID, LightOnButton.Checked);
             tester.ChangeWatts(LightID, Convert.ToDouble(SetWattageTextbox.Text));
-
             if (tester.IsLightOn(LightID))
             {
                 StatusLabel.Text = "Status: On";
